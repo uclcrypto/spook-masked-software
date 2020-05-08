@@ -20,7 +20,7 @@ In order to secure Spook against side-channel long term key recovery attacks, on
 *   Assembly is not tuned for performances but to reduce lower order leakages. As a consequence, these are reduced but still exist.
 
 ## Data-sets
-For the challenge, various data-sets are available for each number of shares. Namely, 200k traces with random key and random nonce are available in `random_key/`. These are typically used profiling. Five different sets with a fixed key of 100k traces are also available in `fixed_key/key_X/`. They can be used for challengers to evaluate their attacks. Evaluation of the submitted attacks will be performed on similar secret traces with fixed secret key. All the data-set are split in multiple files containing each 10k traces.
+For the challenge, various data-sets are available for each number of shares. Namely, 200k traces with random key and random nonce. These are typically used profiling. Five different sets with a fixed key of 100k traces are also available. They can be used for challengers to evaluate their attacks. Evaluation of the submitted attacks will be performed on similar secret traces with fixed secret key. All the data-set are split in multiple files containing each 10k traces.
 
 ### Traces description
 The avaible traces are raw current traces recorded with a [CT1 current probe](https://download.tek.com/datasheet/AC_Current_Probes.pdf) placed between the power regulator and the target (see [SETUP.md](SETUP.md) for more details). Only the first sbox and lbox layers are recorded within the traces as depicted in the following example (D=4). There, one can observe the first step of Clyde which includes the sbox with 4 ISW multiplications and one refresh. After the sbox layer comes the lbox.
