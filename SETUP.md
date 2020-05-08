@@ -44,6 +44,7 @@ This generates the file [parameters.py](interface/parameters.py). It will later 
 The project contains testing scripts for the primary candidate of Spook. These are checking that the ciphertext matches the test vectors coming with the reference implementation of Spook. It also verifies the consistency of the decryption.
 The on-board tests can be launched thanks to
 ```
+export PYTHONPATH=./:$PYTHONPATH
 make BOARD=1 test_board
 ```
 where all the previously mentioned flags can be used. This will launch scripts within [test/](test/)
