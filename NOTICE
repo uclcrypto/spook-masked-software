@@ -1,0 +1,23 @@
+Spook SW CTF
+
+This work has been developped at UCLouvain.
+Unless noted otherwise subsequently or in individual files, the files are copyright UCLouvain.
+
+Unless noted otherwise subsequently or in the files in question the
+following licenses apply:
+
+-All files in the "board_m0" directory and its subdirectories are
+licensed under the BSD 3-Clause licence. You may obtain a copy of
+the Licence at opensource.org/licenses/BSD-3-Clause
+
+-All files in the "capture", "interface" and "tests" directories and
+their subdirectories and the "Makefile" are
+licensed under the MIT License as defined at the beginning of each file.
+
+-All files in the "embedded_src" directory and its subdirectories are
+licenced under the Apache 2.0 licence as defined in the "embedded_src/LICENCE" file.
+You may obtain a copy of the Licence at http://www.apache.org/licenses/LICENSE-2.0
+
+-The "README.md" and "SETUP.md" file are licensed
+under the Creative Commons Attribution 4.0 International License, as defined
+in https://creativecommons.org/licenses/by/4.0/legalcode.
