@@ -21,6 +21,7 @@
 #include <string.h>
 #include "crypto_aead.h"
 #include "api.h"
+#include "prng.h"
 #include "s1p.h"
 #include "utils_masking.h"
 #include "primitives.h"
@@ -51,7 +52,7 @@ uint8_t m[MAX_LEN],m_len;
 uint8_t npub[CRYPTO_NPUBBYTES];
 uint32_t k[(CRYPTO_KEYBYTES/4)*D];
 uint32_t initial_key[4*D];
-unsigned long long clen,adlen,mlen;
+uint32_t clen,adlen,mlen;
 
 void SystemClock_Config(void);
 static void simple_refresh(uint32_t *out,uint32_t *in){
