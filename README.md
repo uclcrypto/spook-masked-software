@@ -1,7 +1,7 @@
 # **Spook Software Capture the Flag (CTF)**
 This project contains all the sources for the Software Capture the Flag on a [STM32 F0 Cortex-M0 Discovery board](https://www.st.com/en/evaluation-tools/32f0308discovery.html). This CTF makes available datasets for current measurement on (Spook)[https://spook.dev].
 
-_Note: no security claims comes with this code. It is a straightfoward implementation of state-of-the-art software masking scheme of which security depends on various factors such as effective masking order and noise level which are not guaranteed with this code._
+_Note: no security claims come with this code. It is a straightfoward implementation of state-of-the-art software masking scheme of which security depends on various factors such as effective masking order and noise level which are not guaranteed with this code._
 
 ## Directory description
 This project contains several directories:

@@ -2,7 +2,7 @@
 
 ## Hardware requirements
 In order to use a low-cost platform, we have decided to use a STMicroelectronics Discovery board. The version used for this ctf is based on the [STM32F030R8](https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f0-series/stm32f0x0-value-line/stm32f030r8.html) with an ARM Cortex-M0. The configuration we have adopted is the _HSE oscillator on-board from X2 crystal (not provided)_, reported at page 17 of the [user manual of the board](https://www.st.com/resource/en/user_manual/dm00092306-discovery-kit-for-stm32f030-value-line-microcontrollers-stmicroelectronics.pdf). The list of modifications we have applied to the board are listed as follows:
-*    In X2, a 8MHz quartz [crystal](https://be.farnell.com/txc/9b-8-000maaj-b/xtal-8-000mhz-18pf-hc-49s/dp/1842268?ost=crystal+9B-8.000MAAJ-B) has been soldered. We have used a through-hole type component. Following the user manual and the schematic, we have used a 18pF capacitors for C13 and C14. The resistor R23 is zero ohm and R22 is 390 ohms. In addition, we have removed solder bridges SB16, SB17 and SB18.
+*    In X2, a 8MHz quartz [crystal](https://be.farnell.com/txc/9b-8-000maaj-b/xtal-8-000mhz-18pf-hc-49s/dp/1842268?ost=crystal+9B-8.000MAAJ-B) has been soldered. We have used a through-hole type component. Following the crystal datasheet and the schematic, we have used 18pF capacitors for C13 and C14. The resistor R23 is zero ohm and R22 is 390 ohms. In addition, we have removed solder bridges SB16, SB17 and SB18.
 *    To increase the available bandwidth at the probing point, we have removed C18, C19, C20, C21.
 
 Once these modifications are done, one can plug the board in the following way:
